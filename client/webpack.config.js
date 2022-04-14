@@ -35,6 +35,8 @@ module.exports = () => {
         name: 'Text Editor',
         short_name: 'txtEditor',
         description: 'Text editor in browser',
+        background_color: '#084299',
+        theme_color: '#084299',
         start_url: '/',
         publicPath: '/',
      }),
@@ -50,7 +52,6 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          
           use: {
             loader: 'babel-loader',
             options: {
