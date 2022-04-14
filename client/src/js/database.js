@@ -27,7 +27,7 @@ console.log("i'm working!",result)
 export const getDb = async () => {console.error('getDb not implemented');
 
 const jateDb = await openDB('jate', 1);
-const perms = jateDb.transaction ('contact', 'readonly');
+const perms = jateDb.transaction ('jate', 'readonly');
 const store = perms.objectStore('jate');
 const request = store.getAll();
 const result = await request;
